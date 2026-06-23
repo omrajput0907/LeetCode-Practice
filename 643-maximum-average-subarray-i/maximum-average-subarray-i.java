@@ -8,9 +8,8 @@ class Solution {
             return max;
         }
         double curr=max;
-        int j=0;
         for(int i=k;i<nums.length;i++){
-            curr-=nums[j++];
+            curr-=nums[i-k];
             curr+=nums[i];
             max=Math.max(curr,max);
         }
