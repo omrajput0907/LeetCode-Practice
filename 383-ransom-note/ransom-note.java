@@ -1,5 +1,6 @@
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
+        if (ransomNote.length() > magazine.length()) return false;
         boolean[] ran_note=new boolean[ransomNote.length()];
         boolean[] mag_ine=new boolean[magazine.length()];
 
